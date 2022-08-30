@@ -4,6 +4,7 @@ const lowCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'
 const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 const special = ['!', '@', '#', '$', '%', '^', '&', '*', '-', '_', '=', '+', '.', '?', '/', '~'];
 let charSet = []
+let passString = []
 
 
 // Get references to the #generate element
@@ -39,10 +40,22 @@ function writePassword() {
     }
   }
 
+  console.log(charSet);
+
+  //this is how items from the selected characters will be chosen randomly and put together in a string.
+  function generatePassword() {
+    for (let i = 0; i < passLength; i++) {
+      var index = Math.floor(Math.random() * charSet.length);
+      passString[i] = charSet[index]
+    }
+        //IT WORKED OMG
+    return passString.join('');
+  }
 
 
 
   var password = generatePassword();
+
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
