@@ -13,6 +13,8 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
 
+  charSet = [];
+
   let passLength = prompt("How many characters would you like the password to be?", "Enter a number, 8-128");
   if (isNaN(passLength) || (passLength < 8) || (passLength > 128)) {
     window.alert("Invalid entry, please try again.");
