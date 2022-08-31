@@ -23,4 +23,10 @@ Click the "Generate Password" button to begin a process of selecting password le
 <img src="./images/passgen_scrsht_083022_8.png" alt="The generated password is displayed in the text box."></img>
 
 ## Deployed URL
-<a href=">
+<a href="https://dberry38.github.io/youShallNotPassword/" target="_blank">Click here!</a>
+
+## Credits
+N/A
+
+## Lisence
+Refer to MIT lesence in repo.
