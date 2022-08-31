@@ -13,6 +13,8 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
 
+  console.clear();
+
   charSet = [];
 
   let passLength = prompt("How many characters would you like the password to be?", "Enter a number, 8-128");
@@ -53,6 +55,8 @@ function writePassword() {
         //IT WORKED OMG
     return passString.join('');
   }
+
+
 
 
 
